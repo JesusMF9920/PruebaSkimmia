@@ -7,26 +7,22 @@ function comprobeDigits(dividend, divider) {
 function validate (a, b, c, index) {
 
   if (!a && !b && !c) {
-    // console.log(index)
-    return index
+    return index;
   }
 
   while (a && !b) {
-    // console.log('Music')
-    a = false
-    return 'TI'
+    a = false;
+    return 'TI';
   }
 
   while(b && !a) {
-    // console.log('TI')
-    b = false
-    return 'Music'
+    b = false;
+    return 'Music';
   }
 
   while (c) {
-    // console.log('Musical')
-    c = false
-    return 'Musical'
+    c = false;
+    return 'Musical';
   }
 }
 
