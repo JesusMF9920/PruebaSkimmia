@@ -40,11 +40,11 @@ describe('Utils functions', () => {
     })
 
     test('sould Music x2', () => {
-      expect(validate(true, false, false, 3)).toBe('Music')
+      expect(validate(true, false, false, 3)).toBe('TI')
     })
 
     test('should to be a TI', () => {
-      expect(validate(false, true, false, 5)).toBe('TI')
+      expect(validate(false, true, false, 5)).toBe('Music')
     })
 
     test('should Musical', () => {
