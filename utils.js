@@ -5,24 +5,17 @@ function comprobeDigits(dividend, divider) {
 }
 
 function validate (a, b, c, index) {
-
-  if (!a && !b && !c) {
-    return index;
-  }
-
-  while (a && !b) {
-    a = false;
-    return 'TI';
-  }
-
-  while(b && !a) {
-    b = false;
-    return 'Music';
-  }
-
-  while (c) {
-    c = false;
-    return 'Musical';
+  switch (true) {
+    case a && !b:
+      a = false;
+      return 'TI';
+    case b && !a:
+      b = false;
+      return 'Music';
+    case c :
+      return 'Musical';
+    default:
+      return index;
   }
 }
 
